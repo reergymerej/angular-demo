@@ -10,25 +10,31 @@
   </div>
 
   <div class="container">
-    <h3>date element</h3>
-    <ul>
-      <li><strong>format</strong> - specify format using any standard Angular <a href="https://docs.angularjs.org/api/ng/filter/date">date filter formats</a> <em>(defaults to 'medium')</em></li>
-      <li><strong>interval</strong> - update interval in seconds <em>(defaults to 1)</em></li>
-    </ul>
+    <h3>date</h3>
+    <p>The <code>date</code> directive adds the current formatted date.</p>
 
+    <h4>Attributes</h4>
+    <dl>
+      <dt>format</dt>
+      <dd>any standard Angular <a href="https://docs.angularjs.org/api/ng/filter/date">date filter format</a> <em>(defaults to 'shortDate')</em></dd>
+      <dt>interval</dt>
+      <dd>update interval in seconds <em>(defaults to '0')</em></dd>
+    </dl>
+
+    <h4>Examples</h4>
     <p>
       <code>&lt;date&gt;&lt;/date&gt;</code><br>
       <date></date>
     </p>
     
     <p>
-      <code>&lt;date format="mediumTime"&gt;&lt;/date&gt;</code><br>
-      <date format="mediumTime"></date>
+      <code>&lt;date format="mediumTime" interval="1"&gt;&lt;/date&gt;</code><br>
+      <date format="mediumTime" interval="1"></date>
     </p>
 
     <p>
-      <code>&lt;date format="MMMM d, HH:mm:sss a" interval="3"&gt;&lt;/date&gt;</code><br>
-      <date format="MMMM d, HH:mm:sss a" interval="3"></date>
+      <code>&lt;date format="MMMM d - HH:mm:ss a" interval="3"&gt;&lt;/date&gt;</code><br>
+      <date format="MMMM d - HH:mm:ss a" interval="3"></date>
     </p>
   </div>
 
