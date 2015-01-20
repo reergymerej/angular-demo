@@ -10,8 +10,26 @@
   </div>
 
   <div class="container">
-    <p>This is a <code>&lt;date&gt;</code>.</p>
-    <date></date>
+    <h3>date element</h3>
+    <ul>
+      <li><strong>format</strong> - specify format using any standard Angular <a href="https://docs.angularjs.org/api/ng/filter/date">date filter formats</a> <em>(defaults to 'medium')</em></li>
+      <li><strong>interval</strong> - update interval in seconds <em>(defaults to 1)</em></li>
+    </ul>
+
+    <p>
+      <code>&lt;date&gt;&lt;/date&gt;</code><br>
+      <date></date>
+    </p>
+    
+    <p>
+      <code>&lt;date format="mediumTime"&gt;&lt;/date&gt;</code><br>
+      <date format="mediumTime"></date>
+    </p>
+
+    <p>
+      <code>&lt;date format="MMMM d, HH:mm:sss a" interval="3"&gt;&lt;/date&gt;</code><br>
+      <date format="MMMM d, HH:mm:sss a" interval="3"></date>
+    </p>
   </div>
 
   <!--  -->
